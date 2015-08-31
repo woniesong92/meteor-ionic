@@ -43,10 +43,7 @@
 // };
 
 // window.addEventListener('native.keyboardshow', function (event) {
-<<<<<<< HEAD
-//   // TODO: Android is having problems
-=======
->>>>>>> 204c2d26831cfe157ff3df53d06e137e70f811be
+
 //   if (Platform.isAndroid()) {
 //     return;
 //   }
