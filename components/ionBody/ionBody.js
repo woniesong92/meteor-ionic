@@ -28,12 +28,14 @@ Template.ionBody.helpers({
     if (Meteor.isClient) {
       classes.push('platform-web');
     }
-    if ((Meteor.isCordova && Platform.isIOS()) || Session.get('platformOverride') === 'iOS') {
+    if ((Platform.isIOS()) || Session.get('platformOverride') === 'iOS') {
       classes.push('platform-ios');
     }
-    if ((Meteor.isCordova && Platform.isAndroid()) || Session.get('platformOverride') === 'Android') {
+    if ((Platform.isAndroid()) || Session.get('platformOverride') === 'Android') {
       classes.push('platform-android');
     }
+
+    console.log(classes);
 
     return classes.join(' ');
   }
