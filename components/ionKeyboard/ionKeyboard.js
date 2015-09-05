@@ -43,6 +43,7 @@
 // };
 
 // window.addEventListener('native.keyboardshow', function (event) {
+
 //   if (Platform.isAndroid()) {
 //     return;
 //   }
@@ -51,13 +52,11 @@
 //   var keyboardHeight = event.keyboardHeight;
 //   // event.stopPropagation();
 
-//   console.log("Moving up!", keyboardHeight)
-
 //   $('[data-keyboard-attach]').each(function (index, el) {
 //     $(el).velocity({
 //       bottom: keyboardHeight
 //     }, {
-//       duration: 150
+//       duration: 170
 //     });
 
 //     $('.content').css('padding-bottom', keyboardHeight);
@@ -65,6 +64,7 @@
 // });
 
 // window.addEventListener('native.keyboardhide', function (event) {
+//   // TODO: Android is having problems
 //   if (Platform.isAndroid()) {
 //     return;
 //   }
@@ -77,6 +77,7 @@
 //     }, {
 //       duration: 0
 //     });
+
 
 //     $('.content').css('padding-bottom', '0px');
 //   });
