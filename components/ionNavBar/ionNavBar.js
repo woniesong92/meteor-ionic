@@ -7,6 +7,8 @@ Template.ionNavBar.created = function () {
     this.transition = 'ios';
   }
 
+  this.transition = undefined;
+
   // Allow overriding the transition
   if (this.data.transition) {
     this.transition = this.data.transition;

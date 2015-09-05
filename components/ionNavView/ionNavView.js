@@ -12,6 +12,8 @@ Template.ionNavView.created = function () {
     this.transition = 'ios';
   }
 
+  this.transition = undefined;
+
   // Allow overriding the transition
   if (this.data && this.data.transition) {
     this.transition = this.data.transition;
@@ -22,6 +24,8 @@ Template.ionNavView.created = function () {
   } else {
     this.transitionDuration = 320;
   }
+
+  this.transitionDuration = 0;
 };
 
 Template.ionNavView.rendered = function () {
