@@ -35,8 +35,6 @@ Template.ionBody.helpers({
       classes.push('platform-android');
     }
 
-    console.log(classes);
-
     return classes.join(' ');
   }
 });
